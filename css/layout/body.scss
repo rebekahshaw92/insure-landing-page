@@ -1,0 +1,172 @@
+$darkViolet: hsl(256, 26%, 20%);
+$veryDarkViolet: hsl(270, 9%, 17%);
+
+.intro {
+   width: 100%;
+ }
+
+
+.mobile {
+    @include media-breakpoint-up(lg){
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+    @include media-breakpoint-up(lg){
+        display: block;
+    }
+}
+
+.desktopIntro {
+    @include media-breakpoint-up(lg){
+        position: relative;
+        margin: 10% 10% -40% -2%;
+    }
+}
+
+.humanizing {
+  background-image: url('../images/bg-pattern-intro-left-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: $darkViolet;
+  padding: 5rem 2rem;
+ &::after {
+  content: "";
+    width: 7.8rem;
+    height: 30rem;
+    background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    bottom: -95%;
+    @include media-breakpoint-up(lg){
+            content: '';
+            display: block;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            margin: 10% 0 -60% 0;
+            background: url('../images/bg-pattern-intro-right-desktop.svg') no-repeat right -10%;
+    }
+    }
+    @include media-breakpoint-up(lg){
+        height: 600px;
+        background-image: none;
+
+    }
+}
+
+.line {
+    display: none; 
+    @include media-breakpoint-up(lg){
+        display: block;
+        border: 2px solid $veryLightGray;
+        width: 30%;
+    }
+}
+.plans {
+    border: 2px solid $veryLightGray;
+    background-color: $darkViolet;
+    width: 50%;
+    margin: 10%;
+    height: 50px;
+    &:hover {
+        background-color: $veryLightGray;
+        color: $veryDarkViolet;
+      }
+      @include media-breakpoint-up(lg){
+        margin-left: 0;
+        width: 30%;
+        margin-top: 5%;
+      }
+
+}
+
+.lineDifferent {
+    padding: 0 auto;
+    margin: 0 auto;
+    margin-top: 30%;
+    width: 40%;
+    border: 1px solid;
+    color: $darkViolet;
+    @include media-breakpoint-up(lg){
+        padding: 0;
+        width: 10%;
+        margin: 15% 3% 0 3%;
+        margin-left: 8%;
+    }
+}
+
+
+.different {
+    height: 115rem;
+    width: 100%;
+    .row {
+         margin:0px;
+      }
+    @include media-breakpoint-up(lg){
+        background-image: url('../images/bg-pattern-intro-left-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: 14%;
+        margin-top: -16%;
+        padding: 18% 0 0% 0;
+        height: 100rem;
+    }
+}
+
+.imageDifferent {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    @include media-breakpoint-up(lg){
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.findOut {
+    background-color: $darkViolet;
+    margin: 5%;
+    margin-top: 20%;
+    height: 28rem;
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 55%;
+    @include media-breakpoint-up(lg){
+        width: 85%;
+        height: 21rem;
+        background-image: url('../images/bg-pattern-how-we-work-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 50%;
+        margin: 10% auto 12% auto;
+        padding: 5% 0;
+    }
+}
+
+.findOutButton {
+    border: 2px solid $veryLightGray;
+    background-color: $darkViolet;
+    width: 50%;
+   margin: 10%;
+   margin-top: 0;
+    height: 50px;
+    &:hover {
+        background-color: $veryLightGray !important;
+        color: $veryDarkViolet !important;
+        font-weight: 700;
+      }
+      @include media-breakpoint-up(lg){
+        margin-top: 30%;
+        width: 60%;
+      }
+}

@@ -1,0 +1,66 @@
+$darkViolet: hsl(256, 26%, 20%);
+$veryDarkViolet: hsl(270, 9%, 17%);
+$veryLightGray: hsl(0, 0%, 98%);
+
+.logo {
+  margin: 8%;
+  @include media-breakpoint-up(lg){
+    margin: 2%;
+    margin-left: 20%;
+  }
+}
+
+.navbar-collapse {
+  width: 80vw;
+  min-height: 100vh;
+  background-color: $veryDarkViolet;  
+  background-image: url("../images/bg-pattern-mobile-nav.svg");
+  background-repeat:  no-repeat;
+  background-position: bottom 0% right 0%;
+  background-size: contain;
+  @include media-breakpoint-up(lg){
+    background-image: none;
+    background-color: $veryLightGray;
+    min-height: 15vh;
+  }
+}
+
+
+
+.nav-button {
+  background-color: $veryDarkViolet;
+  color: $veryLightGray;
+  border: 1px solid $veryLightGray;
+  width: 70%;
+  padding: 0 auto;
+  margin: 0 auto;
+  height: 50px; 
+  &:hover {
+    background-color: $veryLightGray;
+    color: $veryDarkViolet;
+    @include media-breakpoint-up(lg){
+      background-color: $veryDarkViolet;
+      color: $veryLightGray;
+    }
+  }
+  @include media-breakpoint-up(lg){
+    width: 100%;
+    height: 40px;
+    background-color: $veryLightGray;
+    color: $veryDarkViolet;
+    border: 2px solid $veryDarkViolet;
+    margin: 2%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
