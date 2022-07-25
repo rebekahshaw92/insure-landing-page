@@ -60,7 +60,6 @@ I would like to continued working both with JavaScript and Bootstrap 5.
 
 - [Bootstrap](https://getbootstrap.com) - This site helped me learn all I needed to know about Bootstrap.
 
--[Slider](https://www.w3schools.com/howto/howto_js_slideshow.asp) - This allowed me to learn how create a slider using JavaScript 
 
 ## Author
 
